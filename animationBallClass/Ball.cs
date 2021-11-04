@@ -63,7 +63,7 @@ namespace animationBallClass
         }
         public void BounceBall(double actualWidth, double actualHeight)
         {
-            if (positionX + diameter>actualWidth) 
+            if (positionX + diameter>actualWidth) //If the positionX + diameter is greater than the width the change direction
             {
                 speedX *= -1; //Reverse direction of the ball
             }
