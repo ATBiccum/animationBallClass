@@ -30,8 +30,7 @@ namespace animationBallClass
                     int speedX,
                     int speedY,
                     int frameRate,
-                    Color ballColor,
-                    Ellipse circle)
+                    Color ballColor)
         {
             this.diameter = diameter;
             this.positionY = positionY;
@@ -40,7 +39,6 @@ namespace animationBallClass
             this.speedY = speedY;
             this.frameRate = frameRate;
             this.ballColor = ballColor;
-            this.circle = circle;
 
             CreateBall();
         }

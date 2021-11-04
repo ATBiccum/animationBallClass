@@ -57,6 +57,7 @@ namespace animationBallClass
             ball.BounceBall(myCanvas.ActualWidth, myCanvas.ActualHeight);
             Canvas.SetTop(ball.circle, ball.positionY);
             Canvas.SetLeft(ball.circle, ball.positionX);
+            myCanvas.Children.Add(ball.circle);
         }
     }
 }
