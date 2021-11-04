@@ -24,9 +24,6 @@ namespace animationBallClass
 
         public Ellipse circle;
 
-
-        //public Ellipse circle;  //Need something to replace this
-
         public Ball(int diameter,
                     int positionY,
                     int positionX,
@@ -65,7 +62,22 @@ namespace animationBallClass
         {
             if (positionX + diameter>actualWidth) //If the positionX + diameter is greater than the width the change direction
             {
-                speedX *= -1; //Reverse direction of the ball
+                speedX *= -1; //Reverse direction of the ball in X axis
+            }
+            
+            if (positionY + diameter>actualHeight) //If the positionY + diameter is greater than the height the change direction
+            {
+                speedY *= -1; //Reverse direction of the ball in Y axis
+            }
+
+            if (positionX < 0) //If the ball hits the left side 
+            {
+                speedX *= -1; //Reverse direction of the ball in X axis
+            }
+
+            if (positionY < 0) //Reverse direction of the ball in the Y axis
+            {
+                speedY *= -1; //Reverse direction of the ball in Y axis
             }
         }
     }
